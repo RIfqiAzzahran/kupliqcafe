@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="px-32 mx-auto flex justify-between items-center py-7 transition-all duration-500">
         <Link
           href="/"
-          className="text-3xl text-white font-bold"
+          className="text-4xl text-white font-medium"
           style={{ fontFamily: "Cormorant Infant, serif" }}
         >
           Kupliq Cafe
