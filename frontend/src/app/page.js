@@ -6,13 +6,11 @@ import Hero4 from "./components/Hero4";
 import HeroSection from "./components/HeroSection";
 import Button from './components/Button';
 import Image from 'next/image';
-import Navbar from "./components/Navbar"; // Pastikan path ke Navbar benar
-import Footer from  "./components/Footer";
+import Footer from "./components/Footer";
 
 const Home = () => {
   return (
     <div className="">
-      <Navbar /> 
       <div className="w-full min-h-screen flex flex-col justify-center items-center p-6 bg-[url('/images/img_coffeeimage.png')] bg-cover bg-center">
         <div className="flex justify-start items-start w-full px-24">
           <Hero />
@@ -60,8 +58,10 @@ const Home = () => {
         <div className="h-40">
         </div>
       </div>
-
+    
+    <Footer />
     </div>
+    
   );
 };
 
