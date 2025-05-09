@@ -1,13 +1,15 @@
-// app/about/page.js
+import NavbarMenu from "../components/NavbarMenu";
+import CardProduct from "../components/CardProduct";
+export const metadata = {
+  title: "Menu - Kupliq Cafe",
+  description: "Daftar menu makanan dan minuman Kupliq Cafe",
+};
 
-const About = () => {
-    return (
-      <div className="mt-40 px-20 justify-center min-h-screen">
-        <h1 className="text-4xl font-bold">We’ve got your morning covered with</h1>
-        <p className="text-xl mt-4">This is the About page of our website.</p>
-      </div>
-    );
-  };
-  
-  export default About;
-  
+export default function MenuPage() {
+  return (
+    <main className="bg-white min-h-screen">
+
+      <CardProduct />
+    </main>
+  );
+}

@@ -1,7 +1,5 @@
 // app/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
-import Navbar from "./components/Navbar"; // Pastikan path ke Navbar benar
-import Footer from  "./components/Footer";
 import "./globals.css"; // Import global styles
 
 // Load font Google dengan variabel CSS
@@ -31,9 +29,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-white text-black  dark:text-white`}
       >
         <div className="min-h-screen w-full flex flex-col">
-          <Navbar /> {/* Navbar global */}
           {children} {/* Konten halaman */}
-          <Footer />
+  
         </div>
       </body>
     </html>

@@ -1,0 +1,39 @@
+'use client';
+
+import SearchBar from './Searchbar';
+
+export default function NavbarMenu() {
+  return (
+    <nav className="bg-white shadow-md text-white p-4 backdrop-blur-md sticky top-0 z-50">
+      <div className="flex flex-wrap items-center justify-between gap-4 mt-4 px-4">
+        {/* Left Section: Judul */}
+        <h1 className="text-4xl font-semibold text-[#775142]">Menu</h1>
+
+        {/* Middle Section: SearchBar */}
+        <div className="flex-1 mx-4">
+          <SearchBar />
+        </div>
+
+        {/* Right Section: Buttons */}
+        <div className="flex items-center space-x-4">
+          <button className="p-2 px-8 bg-white rounded-lg border-2 border-[#775142] hover:bg-[#775142] text-[#775142] hover:text-white transition">
+            Back
+          </button>
+          <button className="p-2 px-8 bg-white rounded-lg border-2 border-[#775142] hover:bg-[#775142] text-[#775142] hover:text-white transition">
+            Pesanan Saya
+          </button>
+          <button className="p-2 px-8 bg-white rounded-lg border-2 border-[#775142] hover:bg-[#775142] text-[#775142] hover:text-white transition">
+            Cart
+          </button>
+        </div>
+      </div>
+
+      {/* Bottom Menu Categories */}
+      <div className="flex justify-start mt-8 space-x-6 text-sm font-medium px-4">
+        <button className="text-[#775142] hover:text-[#4d342a] transition">All Product</button>
+        <button className="text-[#775142] hover:text-[#4d342a] transition">Food</button>
+        <button className="text-[#775142] hover:text-[#4d342a] transition">Beverages</button>
+      </div>
+    </nav>
+  );    
+}
