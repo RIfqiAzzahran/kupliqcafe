@@ -1,11 +1,11 @@
 'use client';
 
-import SearchBar from './Searchbar';
+import SearchBar from "./SearchBar";
 
 export default function NavbarMenu() {
   return (
     <nav className="bg-white shadow-md text-white p-4 backdrop-blur-md sticky top-0 z-50">
-      <div className="flex flex-wrap items-center justify-between gap-4 mt-4 px-4">
+      <div className="flex flex-wrap items-center justify-between gap-8 mt-4 px-15">
         {/* Left Section: Judul */}
         <h1 className="text-4xl font-semibold text-[#775142]">Menu</h1>
 
@@ -29,7 +29,7 @@ export default function NavbarMenu() {
       </div>
 
       {/* Bottom Menu Categories */}
-      <div className="flex justify-start mt-8 space-x-6 text-sm font-medium px-4">
+      <div className="flex justify-start mt-8 space-x-6 text-sm font-medium px-15">
         <button className="text-[#775142] hover:text-[#4d342a] transition">All Product</button>
         <button className="text-[#775142] hover:text-[#4d342a] transition">Food</button>
         <button className="text-[#775142] hover:text-[#4d342a] transition">Beverages</button>
